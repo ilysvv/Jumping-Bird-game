@@ -24,5 +24,9 @@ public class apple : MonoBehaviour
             logic.AddScore(1);
             Destroy(gameObject);
         }
+        if (transform.position.x < -27f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
