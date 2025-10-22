@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class points : MonoBehaviour
 {
-    public Logic logic;
     // Start is called before the first frame update
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<Logic>();
     }
 
     // Update is called once per frame
@@ -17,11 +15,4 @@ public class points : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == 3)
-        {
-            logic.AddScore(1);
-        }
-    }
 }

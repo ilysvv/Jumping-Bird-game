@@ -442,7 +442,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 3935230082476840411, guid: 89f0be7b171cf41479301ed999428d8d, type: 3}
-  spawnRate: 3
+  apple: {fileID: 3470873886699567700, guid: 8ce993d93f6be204b9be4c64acdc6f79, type: 3}
+  spawnPipeRate: 2
+  spawnAppleRate: 4
 --- !u!4 &1172139422
 Transform:
   m_ObjectHideFlags: 0
