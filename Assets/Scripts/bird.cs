@@ -8,6 +8,7 @@ public class bird : MonoBehaviour
     public Logic logic;
     public float upForce = 5f;
     bool isAlive = true;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class bird : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isAlive)
         {
             MyRigidbody2D.velocity = Vector2.up * upForce;
+            animator.SetTrigger("fly");
         }
         if ((transform.position.y >= 12 || transform.position.y <= -12) && isAlive)
         {

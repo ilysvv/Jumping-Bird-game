@@ -16,16 +16,16 @@ public class apple : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
+        if (transform.position.x < -27f)
+        {
+            Destroy(gameObject);
+        }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 3)
         {
             logic.AddScore(1);
-            Destroy(gameObject);
-        }
-        if (transform.position.x < -27f)
-        {
             Destroy(gameObject);
         }
     }
