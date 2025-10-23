@@ -14,6 +14,7 @@ public class bird : MonoBehaviour
     void Start()
     {
        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<Logic>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
